@@ -1,0 +1,14 @@
+{
+  "port":  5000,
+  "db": {
+    "connectionLimit": 5,
+    "host": "localhost",
+    "user": "root",
+    "password": "root",
+    "database": "fullstack_edu"
+  },
+  "usersTable" : "users",
+  "linksTable" : "links",
+  "jwtSecret": "my secret string to this project",
+  "baseUrl": "http://localhost:5000"
+}
