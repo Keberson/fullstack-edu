@@ -2,11 +2,11 @@ const express = require('express');
 const config = require("config");
 const path = require('path');
 
-const PORT = config.get('port') || 3000;
+const PORT = config.get('port') || 5000;
 
 const app = express();
 
-app.use(express.json({ extended: true }))
+app.use(express.json({ extended: true }));
 app.use('/api/auth', require('./routes/auth.routes'));
 app.use('/api/link', require('./routes/link.routes'));
 app.use('/t/', require('./routes/redirect.routes'));
